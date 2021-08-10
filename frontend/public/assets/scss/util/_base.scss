@@ -1,0 +1,77 @@
+@use './variable';
+
+html {
+  font-size: 72.5%;
+}
+
+body {
+  font-family: variable.$inter;
+  background: variable.$cloudColor;
+}
+
+/* Global Style */
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem !important;
+}
+
+.form-control {
+  height: 4rem !important;
+  font-size: 1.5rem !important;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+span {
+  font-size: 1.25rem;
+}
+
+label {
+  font-size: 1.25rem;
+}
+
+q {
+  font-size: 1.5rem;
+}
+
+i {
+  font-size: 1.75rem;
+  color: variable.$mainColor;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+button {
+  font-size: 1.5rem;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}

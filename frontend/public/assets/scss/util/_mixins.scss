@@ -1,0 +1,10 @@
+@use './variable';
+
+@mixin colorIcon($color) {
+    color: $color;
+}
+
+@mixin templateIcon($colorBackground) {
+    background: rgba($colorBackground, $alpha: 0.15);
+    border-radius: 50%;
+}

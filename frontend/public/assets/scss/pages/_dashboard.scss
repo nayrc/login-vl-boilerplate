@@ -1,0 +1,55 @@
+@use "../util/variable";
+
+.wrapper-dashboard {
+
+  .logo {
+    background: #000 !important;
+    padding: 2rem 1.5rem 0.5rem 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: variable.$whiteColor;
+  }
+
+  .typograph {
+    color: black;
+    position: relative;
+
+    h1 {
+      font-size: 8rem;
+      letter-spacing: 5px;
+
+      &:not(.typea) {
+        font-family: variable.$cormorant;
+        font-weight: 700;
+      }
+    }
+
+    .typea {
+      -webkit-text-fill-color: transparent;
+      /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgba(0, 0, 0, 0.25);
+    }
+
+    img {
+      width: 175px;
+      position: absolute;
+      top: 25%;
+      right: -10%;
+      transform: rotate(-10deg);
+      z-index: -2;
+    }
+  }
+
+  .logout {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+
+    .main-button {
+      width: auto !important;
+      background: #000 !important;
+    }
+  }
+}

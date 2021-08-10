@@ -1,0 +1,12 @@
+@use './variable';
+
+.main-button {
+    background: #0536ff !important;
+    padding: 1rem 2rem !important;
+    border: 0px;
+    color: variable.$whiteColor !important;
+    width: 100%;
+    border-radius: 0.75rem !important;
+    position: relative;
+    text-transform: uppercase;
+}
